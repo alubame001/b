@@ -158,6 +158,7 @@ function showChat() {
 
 // query connector
 function queryEntry(uid, callback) {
+	console.log("window.location.hostname",window.location.hostname)
 	var route = 'gate.gateHandler.queryEntry';
 	pomelo.init({
 		host: window.location.hostname,
