@@ -18,8 +18,17 @@ app.configure('production|development', function() {
 		heartbeats: true,
 		closeTimeout: 60 * 1000,
 		heartbeatTimeout: 60 * 1000,
-		heartbeatInterval: 25 * 1000
+		heartbeatInterval: 25 * 1000,
+		ssl: {
+        type: 'wss',
+        key: fs.readFileSync('../shared/ssl/private.key'),
+        cert: fs.readFileSync('../shared/ssl/full_chain.pem')
+      }
 	});
+
+
+
+
 	// filter configures
 	app.filter(pomelo.timeout());
 });

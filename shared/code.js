@@ -1,0 +1,148 @@
+module.exports = {
+	OK: 200,
+	FAIL: 500,
+    EXIST: 600,
+    NOT_EXIST: 601,
+    TOKEN:{
+		INVALID:700
+	},
+
+    BET:{
+        NOT_ENOUGH_BALANCE:800,
+        BET_TOO_MUCH:801,
+        NOT_ENOUGH_BANKER_BALANCE:802,
+        PARAM_ERROR:803
+	},
+    INVEST:{
+        NOT_ENOUGH_BALANCE:900,
+        BET_TOO_MUCH:901,
+		ERROR:902,
+        PARAM_ERROR:903
+    },
+    DEINVEST:{
+        NOT_ENOUGH_BALANCE:1000,
+        BET_TOO_MUCH:1001,
+        ERROR:1002,
+		PARAM_ERROR:1003
+
+    },
+
+    PLAYER:{
+        LEVEL_NOT_ENOUGH:1400,
+		PLAY_NOT_EXIST:1401,
+
+	},
+	ENTRY: {
+		FA_TOKEN_INVLID: 	1501,
+		FA_TOKEN_EXPIRE: 	1502,
+		FA_USER_NOT_EXIST: 	1503
+	},
+    VALIDATE:{
+        NEED_LOGIN:1600,
+        NEED_TWO_STEP_AUTH:1601,
+        NEED_DESK_PASSWORD:1602,
+        PARAM_ERROR:1603,
+        DESK_NOT_EXIST:1604,
+        PLAYER_NOT_EXIST:1605,
+		PLAYER_ALREADY_IN_DESK: 1606,
+		COIN_INCORRECT:1607,
+		CAPTCHA_ERROR:160,
+
+
+
+    },
+
+	GATE: {
+		FA_NO_SERVER_AVAILABLE: 2001
+	},
+
+	CHAT: {
+		FA_CHANNEL_CREATE: 		3001,
+		FA_CHANNEL_NOT_EXIST: 	3002,
+		FA_UNKNOWN_CONNECTOR: 	3003,
+		FA_USER_NOT_ONLINE: 	3004
+	},
+	GAME:{
+		DICE:"dice",
+		NIU:"niu",
+		BACCARAT:"baccarat"
+	},
+	DATABASE:{
+		NO_RECORD:"no record exists",
+		FAIL:"fail when get record"
+	}
+};module.exports = {
+	OK: 200,
+	FAIL: 500,
+    EXIST: 600,
+    NOT_EXIST: 601,
+    TOKEN:{
+		INVALID:700
+	},
+
+    BET:{
+        NOT_ENOUGH_BALANCE:800,
+        BET_TOO_MUCH:801,
+        NOT_ENOUGH_BANKER_BALANCE:802,
+        PARAM_ERROR:803
+	},
+    INVEST:{
+        NOT_ENOUGH_BALANCE:900,
+        BET_TOO_MUCH:901,
+		ERROR:902,
+        PARAM_ERROR:903
+    },
+    DEINVEST:{
+        NOT_ENOUGH_BALANCE:1000,
+        BET_TOO_MUCH:1001,
+        ERROR:1002,
+		PARAM_ERROR:1003
+
+    },
+
+    PLAYER:{
+        LEVEL_NOT_ENOUGH:1400,
+		PLAY_NOT_EXIST:1401,
+
+	},
+	ENTRY: {
+		FA_TOKEN_INVLID: 	1501,
+		FA_TOKEN_EXPIRE: 	1502,
+		FA_USER_NOT_EXIST: 	1503
+	},
+    VALIDATE:{
+        NEED_LOGIN:1600,
+        NEED_TWO_STEP_AUTH:1601,
+        NEED_DESK_PASSWORD:1602,
+        PARAM_ERROR:1603,
+        DESK_NOT_EXIST:1604,
+        PLAYER_NOT_EXIST:1605,
+		PLAYER_ALREADY_IN_DESK: 1606,
+		COIN_INCORRECT:1607,
+		CAPTCHA_ERROR:1608,
+		WRONG:1609,
+
+
+
+    },
+
+	GATE: {
+		FA_NO_SERVER_AVAILABLE: 2001
+	},
+
+	CHAT: {
+		FA_CHANNEL_CREATE: 		3001,
+		FA_CHANNEL_NOT_EXIST: 	3002,
+		FA_UNKNOWN_CONNECTOR: 	3003,
+		FA_USER_NOT_ONLINE: 	3004
+	},
+	GAME:{
+		DICE:"dice",
+		NIU:"niu",
+		BACCARAT:"baccarat"
+	},
+	DATABASE:{
+		NO_RECORD:"no record exists",
+		FAIL:"fail when get record"
+	}
+};
