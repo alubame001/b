@@ -1,54 +1,32 @@
 {
     "development":{
         "connector":[
-             {"id":"connector-server-1", "host":"192.168.2.52", "port":"4050++", "clientPort": 3050, "frontend": true,"clusterCount":8},
-             {"id":"connector-server-2", "host":"192.168.2.52", "port":"4050++", "clientPort": 3051, "frontend": true,"clusterCount":8},
-             {"id":"connector-server-3", "host":"192.168.2.52", "port":"4050++", "clientPort": 3052, "frontend": true,"clusterCount":8}
+             {"id":"connector-server-1", "host":"127.0.0.1", "port":4050, "clientPort": 3050, "frontend": true},
+             {"id":"connector-server-2", "host":"127.0.0.1", "port":4051, "clientPort": 3051, "frontend": true},
+             {"id":"connector-server-3", "host":"127.0.0.1", "port":4052, "clientPort": 3052, "frontend": true}
          ],
-        "game":[
-             {"id":"game-server-1", "host":"192.168.2.52", "port":5050, "clientPort": 5061, "frontend": true} 
-         ],   
         "chat":[
-             {"id":"chat-server-1", "host":"192.168.2.52", "port":6050}
+             {"id":"chat-server-1", "host":"127.0.0.1", "port":6050},
+             {"id":"chat-server-2", "host":"127.0.0.1", "port":6051},
+             {"id":"chat-server-3", "host":"127.0.0.1", "port":6052}
         ],
-         "race":[
-             {"id":"race-server-1", "host":"192.168.2.52", "port":7050}
-        ], 
-         "hol":[
-             {"id":"hol-server-1", "host":"192.168.2.52", "port":8050}
-        ],               
         "gate":[
-           {"id": "gate-server-1", "host": "192.168.2.52", "clientPort": 3014, "frontend": true}
-        ],
-        "gamehttp": [
-          {"id": "gamehttp","port": 3011,  "host": "192.168.2.52"
-        }]             
+           {"id": "gate-server-1", "host": "127.0.0.1", "clientPort": 3014, "frontend": true}
+        ]
     },
     "production":{
            "connector":[
-             {"id":"connector-server-1", "host":"207.246.103.171", "port":4050, "clientPort": 3050, "frontend": true},
-             {"id":"connector-server-2", "host":"207.246.103.171", "port":4051, "clientPort": 3051, "frontend": true},
-             {"id":"connector-server-3", "host":"207.246.103.171", "port":4052, "clientPort": 3052, "frontend": true}
+             {"id":"connector-server-1", "host":"127.0.0.1", "port":4050, "clientPort": 3050, "frontend": true},
+             {"id":"connector-server-2", "host":"127.0.0.1", "port":4051, "clientPort": 3051, "frontend": true},
+             {"id":"connector-server-3", "host":"127.0.0.1", "port":4052, "clientPort": 3052, "frontend": true}
          ],
         "chat":[
-             {"id":"race-server-1", "host":"207.246.103.171", "port":6050}
+             {"id":"chat-server-1", "host":"127.0.0.1", "port":6050},
+             {"id":"chat-server-2", "host":"127.0.0.1", "port":6051},
+             {"id":"chat-server-3", "host":"127.0.0.1", "port":6052}
         ],
-         "race":[
-             {"id":"race-server-1", "host":"207.246.103.171", "port":7050}
-        ],
-         "hol":[
-             {"id":"hol-server-1", "host":"207.246.103.171", "port":8050}
-        ],                
         "gate":[
-           {"id": "gate-server-1", "host": "207.246.103.171", "clientPort": 3014, "frontend": true}
-        ],
-        
-          "production": {
-            "gamehttp": [{
-              "id": "gamehttp",
-              "port": 3011,
-              "host": "207.246.103.171"
-            }]
-          }   
+           {"id": "gate-server-1", "host": "127.0.0.1", "clientPort": 3014, "frontend": true}
+        ]
   }
 }

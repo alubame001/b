@@ -23,6 +23,7 @@ handler.send = function(msg, session, next) {
 	var username = session.uid.split('*')[0];
 	var channelService = this.app.get('channelService');
 	var param = {
+		route: 'onChat',
 		msg: msg.content,
 		from: username,
 		target: msg.target
@@ -31,13 +32,13 @@ handler.send = function(msg, session, next) {
 
 	//the target is all users
 	if(msg.target == '*') {
-		channel.pushMessage('onChat', param);
+		channel.pushMessage(param);
 	}
 	//the target is specific user
 	else {
 		var tuid = msg.target + '*' + rid;
 		var tsid = channel.getMember(tuid)['sid'];
-		channelService.pushMessageByUids('onChat', param, [{
+		channelService.pushMessageByUids(param, [{
 			uid: tuid,
 			sid: tsid
 		}]);
